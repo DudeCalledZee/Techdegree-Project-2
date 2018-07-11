@@ -1,0 +1,110 @@
+/* Main CSS */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #DFDFDF;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3, h2 {
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 10px;
+  margin: 10px 10px;
+  text-transform: uppercase;
+}
+
+/* class */
+
+.container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.name {
+  font-size: 1em;
+  text-align: center;
+}
+
+.nav {
+  font-size: 0.96em;
+  text-align: center;
+}
+
+.nav li {
+  display: list-item;
+  background: white;
+  margin: 5px;
+  padding: 0.85em;
+}
+
+.profile-photo {
+  width: 70%;
+  margin: auto;
+  padding-top: 2em;
+}
+
+.intro {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.portfolio h3 {
+  padding-top: 1em;
+}
+
+.portfolio p {
+  padding-bottom: 1em;
+}
+
+.contact {
+  text-align: center;
+  padding: 5em;
+}
+
+.contact h3 {
+  padding-bottom: 1em;
+}
+
+.footer-nav {
+  font-style: uppercase;
+  border-top: 2px solid grey;
+  width: 100%;
+}
+
+.footer-nav h3 {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+/*  clearfix  */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* Media Querries */
+
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {}
