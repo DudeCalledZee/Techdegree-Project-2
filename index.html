@@ -3,32 +3,37 @@
 
 
 <head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Responsive Website Design</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gaegu">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 
 <body>
-  <header class="main-header clearfix">
+  <header id="top" class="main-header clearfix">
     <div class="container">
       <h1 class="name">Zelemkhan Saydullaev</h1>
-      <ul class="nav clearfix">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <nav>
+        <ul class="nav clearfix">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#main">Portfolio</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <div class="container">
 
       <div class="profile clearfix">
         <div class="profile-photo clearfix"><img src="img/responsive-layout-profile.png" alt="Main profile image">
         </div>
-        <div class="intro clearfix">
+        <div class="intro clearfix home">
           <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!</p>
         </div>
 
@@ -78,22 +83,22 @@
     </div>
   </main>
 
+  <footer id="footer">
+    <div class="contact ">
+      <h3>Contact</h3>
+      <p>If you're intrested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+      <p>Phone +1(111) 555-1234</p>
+      <p>Email email@yoursite.com</p>
+    </div>
 
-  <div class="contact ">
-    <h3>Contact</h3>
-    <p>If you're intrested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-    <p>Phone +1(111) 555-1234</p>
-    <p>Email email@yoursite.com</p>
-  </div>
 
-  <footer>
     <div class="footer-nav ">
       <h3 class="footer-name">Zelemkhan Saydullaev</h3>
-      <h3 class="back-top"><a href="#">Back To Top</a></h3>
+      <h3 class="back-top"><a href="#top">Back To Top</a></h3>
       <ul class="hidden-nav ">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#main">Portfolio</a></li>
+        <li><a href="#footer">Contact</a></li>
       </ul>
     </div>
   </footer>
