@@ -15,7 +15,7 @@ img {
   max-width: 100%;
 }
 
-h1 {
+h1, .footer-name {
   font-family: 'Gaegu', cursive;
 }
 
@@ -23,7 +23,7 @@ h3, h2 {
   font-size: 1em;
 }
 
-.name {
+.name, .footer-name {
   color: turquoise;
 }
 
