@@ -61,8 +61,18 @@ a {
   padding-bottom: 2em;
 }
 
-.portfolio h3 {
+.portfolio {
+  background: white;
   padding-top: 1em;
+}
+
+.portfolio h2 {
+  padding-bottom: 2em;
+  font-size: 2em;
+}
+
+.portfolio h3 {
+  padding: 1em;
 }
 
 .portfolio p {
@@ -81,13 +91,19 @@ a {
 .footer-nav {
   font-style: uppercase;
   border-top: 2px solid grey;
-  width: 100%;
+  margin: 0 10%;
 }
 
-.footer-nav h3 {
-  width: 50%;
+.footer-name {
   float: left;
-  text-align: center;
+}
+
+.back-top {
+  text-align: right;
+}
+
+.hidden-nav {
+  display: none;
 }
 
 /*  clearfix  */
@@ -101,10 +117,79 @@ a {
 /* Media Querries */
 
 @media (min-width: 768px) {
+  p {
+    font-size: 1.2em;
+  }
+  .name {
+    padding: 2em;
+  }
+  .nav li {
+    display: inline-block;
+    text-align: center;
+  }
   .container {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
+  }
+  .project {
+    width: 50%;
+    float: left;
+    padding: 1em;
+    margin: auto;
+  }
+  .portfolio {
+    padding: 1em;
+  }
+  .back-top {
+    display: none;
+  }
+  .hidden-nav {
+    display: inline-block;
+    float: right;
   }
 }
 
-@media (min-width: 1024px) {}
+.hidden-nav li {
+  float: left;
+  padding-top: 1em;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (min-width: 1024px) {
+  p {
+    font-size: 1.5em;
+  }
+  .intro {
+    float: left;
+    width: 50%;
+  }
+  .profile-photo {
+    width: 40%;
+    float: right;
+  }
+  .name {
+    font-size: 1.2em;
+    float: left;
+  }
+  .profile {
+    padding: 1em
+  }
+  .nav {
+    float: right;
+    padding-top: 2em;
+    margin-right: 0;
+  }
+  .project {
+    width: 32%;
+  }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
